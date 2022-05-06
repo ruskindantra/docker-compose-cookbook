@@ -13,3 +13,13 @@ h2. Understanding transactions
 1. https://stackexchange.github.io/StackExchange.Redis/Transactions.html
 1. https://redis.io/docs/manual/programmability/eval-intro/
 1. https://www.w3resource.com/redis/redis-exec.php
+
+h2. Other notes
+1. Running Redis in ElastiCache
+    1. https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/accessing-elasticache.html#access-from-outside-aws
+    1. https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/GettingStarted.ConnectToCacheNode.html
+1. Running Redis via HomeBrew
+    1. https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/
+    1. `brew services start redis`
+    1. `brew services info redis`
+    1. `brew services stop redis`
