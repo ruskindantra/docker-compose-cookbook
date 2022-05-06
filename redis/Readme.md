@@ -13,6 +13,20 @@ h2. Understanding transactions
 1. https://stackexchange.github.io/StackExchange.Redis/Transactions.html
 1. https://redis.io/docs/manual/programmability/eval-intro/
 1. https://www.w3resource.com/redis/redis-exec.php
+1. https://kb.objectrocket.com/redis/how-to-use-the-redis-watch-command-695
+
+h2. Redis UIs
+1. https://www.npmjs.com/package/redis-commander
+
+h2. Connecting to Redis
+1. Use local `redis-cli`
+    1. Installed via HomeBrew using `brew install redis`
+1. Connecting to ElastiCache
+    1. Note cannot connect to ElastiCache unless using VPC, [ref](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/accessing-elasticache.html)
+    1. Use port forwarding [ref](https://aws.amazon.com/blogs/aws/new-port-forwarding-using-aws-system-manager-sessions-manager/)
+        1. Helpful GitHub [repo](https://github.com/aws-samples/aws-systems-manager-port-forwarding-for-amazon-elasticache)
+1. Using Redis UI
+1. NB: Sometimes ports can be blocked depending on where you connect from, be aware of any proxies/firewall settings
 
 h2. Other notes
 1. Running Redis in ElastiCache
