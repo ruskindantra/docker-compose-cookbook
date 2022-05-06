@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  sql-server-1:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql-server-1
+    restart: unless-stopped
+    volumes:
+      - sqlvolume:/var/opt/mssql
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${SQL_SERVER_PASSWORD}
+  
+  sql-server-2:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql-server-2
+    restart: unless-stopped
+    volumes:
+      - sqlvolume2:/var/opt/mssql
+    ports:
+      - 1434:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${SQL_SERVER_PASSWORD}
+
+volumes:
+  sqlvolume:
+  sqlvolume2:
