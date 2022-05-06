@@ -1,3 +1,7 @@
+## Links
+* Loading plugins into Kafka Connect: https://github.com/confluentinc/demo-scene/blob/master/syslog/docker-compose.yml
+* 
+
 ## Ports Used
 | Internal Port | External Port | Purpose |
 |---------------|---------------|---------|
