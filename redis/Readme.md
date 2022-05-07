@@ -25,6 +25,9 @@ h2. Connecting to Redis
     1. Note cannot connect to ElastiCache unless using VPC, [ref](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/accessing-elasticache.html)
     1. Use port forwarding [ref](https://aws.amazon.com/blogs/aws/new-port-forwarding-using-aws-system-manager-sessions-manager/)
         1. Helpful GitHub [repo](https://github.com/aws-samples/aws-systems-manager-port-forwarding-for-amazon-elasticache)
+    1. More on Port Forwarding [ref](https://www.ssh.com/academy/ssh/tunneling/example#what-is-ssh-port-forwarding,-aka-ssh-tunneling?)
+1. Connecting to Redis Cluster Mode enabled
+    1. `redis-cli -h XXXX -c` as `-c` is for Cluster Mode
 1. Using Redis UI
 1. NB: Sometimes ports can be blocked depending on where you connect from, be aware of any proxies/firewall settings
 
