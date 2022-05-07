@@ -14,6 +14,7 @@ h2. Understanding transactions
 1. https://redis.io/docs/manual/programmability/eval-intro/
 1. https://www.w3resource.com/redis/redis-exec.php
 1. https://kb.objectrocket.com/redis/how-to-use-the-redis-watch-command-695
+1. In cluster mode, a transaction cannot span multiple shards so ensure that all the keys within that transaction remain in the same shard.  With keys, a key value as such `user:{123}:account` and `user:{123}:profile` will be guaranteed to go to the same shard as only the part inside the `{...}` is hashed
 
 h2. Redis UIs
 1. https://www.npmjs.com/package/redis-commander
